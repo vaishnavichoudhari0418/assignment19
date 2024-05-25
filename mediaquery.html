@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+         body{
+        background-color: #001e4d;
+      }
+        
+        .container{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+        }
+        .card{
+            margin: 20px;
+            padding: 10px;
+            background-color: #46597c;
+            height: 800px;
+            width: 300px;
+            padding: 0 10px;
+            border-radius: 20px;
+        }
+        .card:hover{
+            box-shadow: 0px 10px 10px 0px  #271e87
+        }
+        img{
+            border-radius: 5%;
+            margin-top: 10px;
+        }
+        #img1{
+            border-radius: 100px;
+            margin-top: -35px;
+            margin-left: 230px;
+        }
+        #a{
+            margin-top: -90px;
+            margin-left: 20px;
+        }
+        /* Small Devices */
+        @media screen  and (max-width:600px){
+            .container {
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+            }
+        
+            .card{
+                width: 150px;
+                height:300px
+        }
+    }
+        /* Normal Devices */
+  
+  @media screen and (min-width: 601px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .card {
+        width: 400px;
+    }
+}
+
+/* Tablet Devices */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        justify-content: space-between;
+        margin-left: 40px;
+    }
+}
+/* Large Devices */
+@media screen and (min-width:993px) and (max-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 20px;
+        justify-content: space-between;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card"><img src="summer.jpg" height="250px" width="300px">
+            <b> The Summer I Turned Pretty </b>
+            <p class="movie-description"><b>Rom-Com</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>2hr30mins</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>23k &nbsp;<img src="heart.png" height="20px"></b><br>
+              A girl is caught in a love triangle between two brothers as she deals with her first love and first heartbreak during the perfect summer.</p>
+            <p class="movie-rating">
+              <img src="rating.png" height="80px"><b>9.1</b></p>
+            <button class="btn">Watch Now</button>
+          </div>
+
+   <div class="card"><img src="idea.png" height="250px"width=300px/>
+      <b>The idea of you </b>
+      <p class="movie-description"><b>Rom-Com</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>2hr30mins</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>23k &nbsp;<img src="heart.png" height="20px"></b><br>
+        A girl is caught in a love triangle between two brothers as she deals with her first love and first heartbreak during the perfect summer.</p>
+      <p class="movie-rating">
+        <img src="rating.png" height="80px"><b>9.1</b></p>
+    <button class="btn">Watch Now</button>
+  </div>
+          
+      
+       <div class="card"><img src="ps-canva-Maxton-Hall-.webp" height="250px"width=300px/>
+          <b>Maxton Hall</b>
+          <p class="movie-description"><b>Rom-Com</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>2hr30mins</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>23k &nbsp;<img src="heart.png" height="20px"></b><br>
+            A girl is caught in a love triangle between two brothers as she deals with her first love and first heartbreak during the perfect summer.</p>
+          <p class="movie-rating">
+            <img src="rating.png" height="80px"><b>9.1</b></p>
+    <button class="btn">Watch Now</button>
+      </div>
+       
+          
+            <div class="card"><img src="culpamia.jpg" height="250px"width=300px/>
+               <b>CulpaMia</b>
+               <p class="movie-description"><b>Rom-Com</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>2hr30mins</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>23k &nbsp;<img src="heart.png" height="20px"></b><br>
+                A girl is caught in a love triangle between two brothers as she deals with her first love and first heartbreak during the perfect summer.</p>
+              <p class="movie-rating">
+                <img src="rating.png" height="80px"><b>9.1</b></p>
+               <button class="btn">Watch Now</button>
+              </div> 
+              </div>
+
+</body>
+</html>
